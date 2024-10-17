@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Acesso ao Filme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Acesso ao Filme</h1>
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="logado">
+                Usuário Logado
+            </label>
+
+            <label>
+                <input type="checkbox" id="assinatura">
+                Assinatura Ativa
+            </label>
+
+            <label>
+                <input type="checkbox" id="voucher">
+                Voucher Promocional
+            </label>
+        </div>
+
+        <button onclick="verificarAcesso()">Verificar Acesso</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
